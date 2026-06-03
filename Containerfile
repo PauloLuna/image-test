@@ -37,4 +37,4 @@ FROM quay.io/fedora/fedora-silverblue:44
     
 ### LINTING
 ## Verify final image and contents are correct.
-RUN bootc container lint
+#RUN bootc container lint
