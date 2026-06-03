@@ -41,6 +41,7 @@ jobs:
           # Lowercase the image uri
           echo "IMAGE_REGISTRY=${IMAGE_REGISTRY,,}" >> ${GITHUB_ENV}
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >> ${GITHUB_ENV}
+          sudo apt update && sudo apt install qemu-user-static -y
 
       # These stage versions are pinned by https://github.com/renovatebot/renovate
       - name: Checkout
